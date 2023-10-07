@@ -7,12 +7,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "AppUser")
+@Table(name = "app_user")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AppUser {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -23,7 +23,7 @@ public class AppUser {
 
     @Override
     public String toString() {
-        return "AppUser{" +
+        return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
